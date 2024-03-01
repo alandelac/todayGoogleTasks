@@ -155,7 +155,7 @@ def main():
 
 # Schedule the method to run every day at 01:00
 
- 
+  print("corriendo")
 
   schedule.every().day.at("04:30").do(actualizarHoy)
   #actualizarHoy()
