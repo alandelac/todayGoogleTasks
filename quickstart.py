@@ -46,6 +46,8 @@ def get_rfc3339_timestamp():
   
 def actualizarHoy():
     
+    print("actualizando listas")
+    
     creds = None
     # The file token.json stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first
@@ -98,7 +100,8 @@ def actualizarHoy():
           tasks = results2.get("items", [])
           
           if not tasks:
-            print("No tasks found in the list: " + item["title"])
+            # print("No tasks found in the list: " + item["title"])
+            pass
           else:
             for curTask in tasks:
               main_task = Task(curTask["id"], curTask["status"], curTask["title"], curTask["due"])
