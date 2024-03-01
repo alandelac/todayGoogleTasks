@@ -155,13 +155,15 @@ def main():
 
 # Schedule the method to run every day at 01:00
 
-  print("programa corriendo")
+ 
 
-  schedule.every().day.at("04:30").do(actualizarHoy)
-  
+  #schedule.every().day.at("04:30").do(actualizarHoy)
+  actualizarHoy()
+  '''	
   while True:
     schedule.run_pending()
     time.sleep(55)  # Wait for one minute
+    '''
   
 
 if __name__ == "__main__":
