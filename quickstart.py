@@ -157,13 +157,13 @@ def main():
 
  
 
-  #schedule.every().day.at("04:30").do(actualizarHoy)
-  actualizarHoy()
-  '''	
+  schedule.every().day.at("04:30").do(actualizarHoy)
+  #actualizarHoy()
+  	
   while True:
     schedule.run_pending()
     time.sleep(55)  # Wait for one minute
-    '''
+    
   
 
 if __name__ == "__main__":
